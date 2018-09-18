@@ -2,7 +2,6 @@
 """OS模块"""
 import os
 
-#
 """os.name输出字符串指示正在使用的平台，window是nt，linux是posix"""
 # print(os.name)
 """os.getcwd获取当前的工作目录"""
