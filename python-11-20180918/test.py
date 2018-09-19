@@ -124,3 +124,33 @@ finally:
 # func()  #func = inner
 ####
 """带参数的装饰器"""
+# def outer(fn):  # 接收被装饰的函数
+#     def inner(*args,**kwargs):# 接收别装饰的函数的形参
+#         start = time.time()
+#         fn(*args,**kwargs)
+#         run = time.time() - start
+#         print(run)
+#     return inner
+# @outer
+# def func(name,user,pwd):
+#     for i in range(999999):
+#         pass
+#     print(user,"come on",name,pwd)
+# func("jack","rose",123456)
+#
+# def outer(num):  # 接收装饰器的参数
+#     def middle(fn):
+#         def inner(*args,**kwargs):
+#             start = time.time()
+#             for i in range(num):
+#                 fn(*args,**kwargs)
+#             run = time.time() - start
+#             print(run)
+#         return inner
+#     return middle
+# @outer(3)
+# def func(user,name):
+#     for i in range(999999):
+#         pass
+#     print(user,"come on",name)
+# func("jack","rose")
