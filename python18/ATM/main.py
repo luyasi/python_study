@@ -2,8 +2,6 @@ from python18.ATM.view import View
 from python18.ATM.operation import Operation
 
 v = View()
-
-
 def main():
     if v.Login():
         o = Operation()

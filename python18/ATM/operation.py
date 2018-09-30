@@ -8,6 +8,7 @@ import pickle
 class Operation(object):
     def __init__(self):
         self.Load_user()
+        self.Load_userid()
         print(self.user_dict)
 
     def Load_user(self):
@@ -21,7 +22,7 @@ class Operation(object):
     def Load_userid(self):
         if os.path.exists("userid.txt"):
             with open("userid.txt", "rb") as f:
-                self.userid_dict = pickle.load(f)
+                self.user_id_dict = pickle.load(f)
         else:
             self.user_id_dict = {}
 
