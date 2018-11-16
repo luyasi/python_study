@@ -9,7 +9,7 @@ class Operation(object):
     def __init__(self):
         self.Load_user()
         self.Load_userid()
-        print(self.user_dict)
+        # print(self.user_dict)
 
     def Load_user(self):
         """先判断文件是否存在"""
